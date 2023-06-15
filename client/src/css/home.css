@@ -1,0 +1,58 @@
+.home-container {
+    width: 100%;
+    min-height: 120vh;
+    background: black;
+    padding-left: 30vh;
+    position: relative;
+}
+.home-socials-container {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    background: #000;
+    display: flex;
+    z-index: 10;
+}
+.home-socials {
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+}
+.home-socials .login {
+    margin-left: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: .4s ease-in-out;
+    padding-top: 5px;
+}
+.home-socials .login:hover {
+    color: #fde100
+}
+.home-socials-container a{
+    font-size: 2.3rem;
+    color: #8b8b8b;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+#fb:hover {
+    color: #1877F2;
+} 
+#yt:hover {
+    color: #FF0000;
+} 
+#ig:hover {
+    color: #C13584;
+} 
+#tt:hover {
+    color: #1DA1F2;
+} 
+#tc:hover {
+    color: #6441a5;
+} 
+
