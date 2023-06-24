@@ -8,18 +8,18 @@ import NewsCard from "../UI/NewsCard";
 const News = () => {
   const [src, setSrc] = useState(2);
   const h1Title = ['Bellingham joins Real Madrid', 'We bought Bansebaini for 20mln€', 'Ansgar Knauff moves to Eintracht Frankfurt']
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if(src === 0) {
-        setSrc(1)
-      }else if(src === 1){
-        setSrc(2)
-      }else if(src ===2) {
-        setSrc(0)
-      }
-    }, 3000);
-    return () => clearInterval(interval)
-  }, [src])
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if(src === 0) {
+  //       setSrc(1)
+  //     }else if(src === 1){
+  //       setSrc(2)
+  //     }else if(src ===2) {
+  //       setSrc(0)
+  //     }
+  //   }, 6000);
+  //   return () => clearInterval(interval)
+  // }, [src])
   const image = document.getElementById("news-image")
   const images = [
     "https://images7.alphacoders.com/127/1278155.jpg",

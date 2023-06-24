@@ -1,5 +1,23 @@
+.players-container-wrapper {
+    position: relative;
+    left: 30vh;
+    width: 85%;
+    z-index: -1;
+    height: 100vh;
+    background: black;
+    padding-top: 4rem;
+}
+.players-container-wrapper h1 {
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    color: #8b8b8b;
+    text-align: center;
+}
 .players-container {
     width: 100%;
-    height: 100vh;
-    background: blue;
+    height: 50%;
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
