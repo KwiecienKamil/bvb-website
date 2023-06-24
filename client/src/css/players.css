@@ -1,11 +1,11 @@
 .players-container-wrapper {
     position: relative;
     left: 30vh;
-    width: 85%;
-    z-index: -1;
-    height: 100vh;
+    width: 90%;
+    z-index: 1;
+    min-height: 110vh;
     background: black;
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 .players-container-wrapper h1 {
     font-size: 2.5rem;
@@ -17,7 +17,7 @@
 .players-container {
     width: 100%;
     height: 50%;
-    padding: 0 5%;
+    padding: 0 10%;
     display: flex;
     flex-wrap: wrap;
 }

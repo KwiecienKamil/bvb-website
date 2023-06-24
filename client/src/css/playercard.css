@@ -1,11 +1,11 @@
 .player-card-wrapper {
     width: 33.3%;
-    height: 20vh;
-    padding-top: 5vh;
+    min-height: 20vh;
+    padding-top: 9vh;
     display: flex;
     gap: 2%;
     font-family: 'Rubik', sans-serif;
-    position: relative
+    position: relative;
 }
 .player-card-image img{
     object-fit: cover;

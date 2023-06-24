@@ -12,15 +12,12 @@ const Navbar = () => {
         alt="logo"
       />
         <Link to="home" spy={true} smooth={true} offset={-100} duration={400}>
-          {" "}
           HOME
         </Link>
         <Link to="players" spy={true} smooth={true} offset={50} duration={400}>
           PLAYERS
         </Link>
-        <Link to="/shop">SHOP</Link>
-        {" "}
-        <Link to="/about">ABOUT</Link>
+        <Link to="shop" spy={true} smooth={true} offset={70} duration={400}>SHOP</Link>
     </div>
   );
 };

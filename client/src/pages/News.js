@@ -6,20 +6,20 @@ import img3 from "../assets/newsImage3.jpg";
 import NewsCard from "../UI/NewsCard";
 
 const News = () => {
-  const [src, setSrc] = useState(2);
+  const [src, setSrc] = useState(0);
   const h1Title = ['Bellingham joins Real Madrid', 'We bought Bansebaini for 20mln€', 'Ansgar Knauff moves to Eintracht Frankfurt']
   // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if(src === 0) {
-  //       setSrc(1)
-  //     }else if(src === 1){
-  //       setSrc(2)
-  //     }else if(src ===2) {
-  //       setSrc(0)
-  //     }
-  //   }, 6000);
-  //   return () => clearInterval(interval)
-  // }, [src])
+  // //   const interval = setInterval(() => {
+  // //     if(src === 0) {
+  // //       setSrc(1)
+  // //     }else if(src === 1){
+  // //       setSrc(2)
+  // //     }else if(src ===2) {
+  // //       setSrc(0)
+  // //     }
+  // //   }, 6000);
+  // //   return () => clearInterval(interval)
+  // // }, [src])
   const image = document.getElementById("news-image")
   const images = [
     "https://images7.alphacoders.com/127/1278155.jpg",
@@ -35,7 +35,6 @@ const News = () => {
           <h1>{`${h1Title[src]}`}</h1>
         </div>
       </div>
-      <h2 id="container-title">BVB NEWS</h2>
       <div className="mini-news-container">
         <NewsCard
           href="https://www.bvb.de/eng/News/Overview/Two-players-in-the-VDV-Team-of-the-Season"

@@ -14,6 +14,7 @@ function App() {
      <Navbar />
      <Players />
      <Shop />
+     <About />
     </>
   );
 }

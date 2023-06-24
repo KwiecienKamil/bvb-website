@@ -1,5 +1,67 @@
-.shop-container {
-    height: 50vh;
-    background: black;
+.shop-container-wrapper {
+    height: 150vh;
+    position: relative;
+    left: 30vh;
+    width: 85%;
+    z-index: 1;
+    background: black;  
+    padding-top: 6vh;
+}
+.shop-container-wrapper h1{
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
     width: 100%;
+    color: #8b8b8b;
+    text-align: center;
+}
+.shop-container{
+    height: 100%;
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.shop-images {
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+.shop-images img {
+    height: 100%;
+    width: 100%;
+}
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+    font-size: 5rem;
+    background: transparent;
+    transition: .4s;
+    border: none;
+}
+.arrow-left {
+    left: 20px;
+}
+.arrow-right {
+    right: 20px;
+}
+.arrow-left:hover, .arrow-right:hover {
+    color: #818181;
+}
+.shop-products-container {
+    position: relative;
+    min-height: 60%;
+    width: 100%;
+    background: #fff;
+    padding: 0 10%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.shop-products-container a {
+    text-decoration: none;
+    color: black;
 }

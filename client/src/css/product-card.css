@@ -1,0 +1,16 @@
+.product-card-container {
+    font-family: 'Rubik', sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.product-card-container img {
+    height: 300px;
+    width: 300px;
+}
+.product-price {
+    font-weight: 600;
+}
