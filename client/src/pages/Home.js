@@ -2,7 +2,7 @@ import React from "react";
 import "../css/home.css";
 import News from "./News";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="home-container" id="home">
       <div className="home-socials-container">
@@ -22,7 +22,7 @@ const Home = () => {
           <a id="tc" href="https://www.twitch.tv/bvb_official" target="_blank">
             <i class="bx bxl-twitch bx-tada-hover"></i>
           </a>
-          <a href="#" className="login">LOG IN</a>
+          <a href="#" className="login" onClick={props.onShowLogin}>LOG IN</a>
         </div>
       </div>
       <News />

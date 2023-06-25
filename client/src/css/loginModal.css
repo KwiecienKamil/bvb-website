@@ -1,0 +1,52 @@
+.modal-container {
+    font-family: 'Rubik', sans-serif;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    height: 250px;
+    width: 24%;
+    background: black;
+    color: white;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal-container input {
+    height: 2rem;
+    width: 250px;
+    padding: 0px 10px;
+    font-size: 1rem;
+}
+.modal-container label {
+    font-weight: 600;
+}
+.username-container, .password-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+.modal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.modal-button button {
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 250px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fde100;
+}
+.sign-in a {
+    text-decoration: underline;
+    cursor: pointer;
+    padding-left: 5px;
+}

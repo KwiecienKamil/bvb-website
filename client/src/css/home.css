@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     padding: 0 4rem;
+    z-index: 5;
 }
 .home-socials .login {
     margin-left: auto;
