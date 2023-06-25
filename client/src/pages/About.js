@@ -19,6 +19,47 @@ const About = () => {
           <img src="https://www.bvbonlineshop.com/media/image/28/d6/ba/dhl-footer-icon.jpg" alt="dhl" />
         </div>
       </div>
+      <div className="about-links">
+          <div className="support">
+            <div className="about-header">
+              <h1>Support</h1>
+            </div>
+            <div className="about-list">
+              <ul>
+                <li><a>Contact</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Size Table</a></li>
+                <li><a>Return Shipment</a></li>
+                </ul>
+            </div>
+          </div>
+          <div className="legal-info">
+          <div className="about-header">
+            <h1>Legal Information</h1>
+          </div>
+          <div className="about-list">
+          <ul>
+                <li><a>Cookies</a></li>
+                <li><a>Terms And Conditions</a></li>
+                <li><a>Data protection</a></li>
+                <li><a>Imprint</a></li>
+              </ul>
+          </div>
+          </div>
+          <div className="newsletter">
+            <div className="about-header">
+              <h1>Newsletter</h1>
+            </div>
+            <div className="about-input">
+              <input type="email" placeholder='Your email address'/>
+              <button type='submit'><i class='bx bx-envelope'></i></button>
+            </div>
+          </div>
+        </div>
+        <div className="about-footer">
+          <p>* All prices incl. value added tax where applicable</p>
+          <h2>© 2005 - 2023 BVB Merchandising GmbH</h2>
+        </div>
     </div>
   )
 }

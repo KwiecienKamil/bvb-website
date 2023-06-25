@@ -35,6 +35,7 @@ const News = () => {
           <h1>{`${h1Title[src]}`}</h1>
         </div>
       </div>
+      <h1 className="section-header">BVB NEWS</h1>
       <div className="mini-news-container">
         <NewsCard
           href="https://www.bvb.de/eng/News/Overview/Two-players-in-the-VDV-Team-of-the-Season"
@@ -42,8 +43,7 @@ const News = () => {
           alt="GregorKobel"
           newsTitle='Two players in the VDV Team of the Season'
           newsTitleDesc='Gregor Kobel and Jude Bellingham have been voted into the 2022/23 Team of the Season by their 
-          fellow professionals in the VDV (the Professional Footballers Union in Germany). 
-          Bellingham also won another award.'
+          fellow professionals in the VDV (the Professional Footballers Union in Germany).'
          />
         <NewsCard
           href="https://www.bvb.de/eng/News/Overview/Four-Borussia-players-are-U17-European-champions"
@@ -51,15 +51,14 @@ const News = () => {
           alt="GregorKobel"
           newsTitle='Four Borussia players are U17 European champions'
           newsTitleDesc='Borussia Dortmund U17 players Almuger Kabar, Paris Brunner, Charles Herrmann 
-          and Kjell Wätjen are European champions! They were part of the Germany U17 national team 
-          that beat France 5-4 on penalties in the EURO final.'
+          and Kjell Wätjen are European champions!'
          />
         <NewsCard
           href="https://www.bvb.de/eng/News/Overview/Information-on-season-and-matchday-tickets-for-2023-24"
           src="https://www.bvb.de/var/ezdemo_site/storage/images/media/bilder/galeriebilder/g_fans_sip4/4214263-1-ger-DE/G_Fans_SIP_bvbnachrichtenbild_regular.jpg"
           alt="Season-info"
-          newsTitle='Information on season and matchday tickets for 2023/24'
-          newsTitleDesc='As in previous seasons, Borussia Dortmund once again consulted with fan representatives regarding ticketing for the 2023/2024 season. This year, the main task was to find solutions to the economic challenges posed by an inflation.'
+          newsTitle='Information on season tickets for 2023/24'
+          newsTitleDesc='As in previous seasons, Borussia Dortmund once again consulted with fan representatives regarding ticketing for the 2023/2024 season.'
          />
       </div>
     </div>
