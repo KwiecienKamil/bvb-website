@@ -4,7 +4,7 @@ import News from "./News";
 
 const Home = (props) => {
   return (
-    <div className="home-container" id="home">
+    <div className="home-container" id="home" >
       <div className="home-socials-container">
         <div className="home-socials">
           <a id="fb" href="https://www.facebook.com/BVB" target="_blank">
@@ -22,10 +22,10 @@ const Home = (props) => {
           <a id="tc" href="https://www.twitch.tv/bvb_official" target="_blank">
             <i class="bx bxl-twitch bx-tada-hover"></i>
           </a>
-          <a href="#" className="login" onClick={props.onShowLogin}>LOG IN</a>
+          <a  className="login" onClick={props.onShowLogin}>LOG IN</a>
         </div>
       </div>
-      <News />
+      <News onCloseLogin={props.onCloseLogin}/>
     </div>
   );
 };

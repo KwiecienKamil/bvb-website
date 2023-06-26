@@ -5,7 +5,7 @@ import img2 from "../assets/newsImage2.jpg";
 import img3 from "../assets/newsImage3.jpg";
 import NewsCard from "../UI/NewsCard";
 
-const News = () => {
+const News = (props) => {
   const [src, setSrc] = useState(0);
   const h1Title = ['Bellingham joins Real Madrid', 'We bought Bansebaini for 20mln€', 'Ansgar Knauff moves to Eintracht Frankfurt']
   useEffect(() => {
@@ -28,7 +28,7 @@ const News = () => {
   ];
 
   return (
-    <div className="news-container">
+    <div className="news-container" onClick={props.onCloseLogin}>
       <div className="news-images">
         <img src={`${images[src]}`} alt="news-img" id="news-image" />
         <div className="news-header">

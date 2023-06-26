@@ -6,7 +6,7 @@
     position: relative;
 }
 .home-socials-container {
-    width: 100%;
+    width: 110%;
     height: 4rem;
     position: relative;
     background: #000;
@@ -19,7 +19,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 4rem;
+    padding-left: 5%;
+    padding-right: 15%;
     z-index: 5;
 }
 .home-socials .login {
@@ -27,7 +28,8 @@
     font-size: 1.5rem;
     font-weight: 700;
     transition: .4s ease-in-out;
-    padding-top: 5px;
+    padding-top: 10px;
+    cursor: pointer;
 }
 .home-socials .login:hover {
     color: #fde100
@@ -56,4 +58,12 @@
 #tc:hover {
     color: #6441a5;
 } 
-
+@media (max-width: 1220px) {
+    .home-socials-container {
+        width: 125%;
+    }
+    .home-socials {
+        padding-left: 4rem;
+        padding-right: 18%;
+    }
+}

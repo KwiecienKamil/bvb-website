@@ -1,6 +1,7 @@
 .news-container {
     min-height: 40%; 
     width: 105%;
+    background: #000;
     color: #000;
     position: relative;
     overflow: hidden;
@@ -53,9 +54,9 @@
 }
 .mini-news-container {
     min-height: 50vh;
-    width: 100%;
+    width: 95%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 100px;
     position: relative;
@@ -65,8 +66,8 @@
     font-family: 'Rubik', sans-serif;
     margin-top: 2%;
     margin-bottom: 10px;
-    width: 19%;
-    height: 45vh;
+    width: 25%;
+    height: 50vh;
     background: #fde100;
     position: relative;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.6);
@@ -106,5 +107,28 @@
     align-items: center;
     justify-content: center;
     padding: 10px 10px;
+}
 
+@media (max-width: 1250px) {
+    .news-container {
+        width: 115%;
+    }
+    .mini-news-container {
+        width: 90%;
+    }
+    .mini-news {
+        height: 40vh;
+        width: 28%;
+    }
+}
+@media (max-width: 900px) {
+    .news-container {
+        width: 130%;
+    }
+}
+@media (max-width: 1100px) {
+    .news-header {
+        height: 70px;
+        font-size: .8rem;
+    }
 }

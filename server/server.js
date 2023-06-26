@@ -8,6 +8,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+const jwt = require('jsonwebtoken');
+
 const connection = mysql.createConnection({
     host: process.env.HOST,
     user: process.env.USER,
@@ -23,7 +25,6 @@ connection.connect((err) => {
     console.log('db ' + connection.state)
 })
 
-//read
 app.get('/players', (req, res) => {
     connection.query('SELECT * FROM squad', (err, result) => {
         if(err) {
@@ -34,6 +35,32 @@ app.get('/players', (req, res) => {
     })
 })
 
+app.post('/register', (req, res) => {
+    const email = req.body.email
+    const password = req.body.password 
 
+    connection.query('INSERT INTO users (email, password) VALUES (?,?)',
+    [email, password], (err, result) => {
+        console.log(err)
+    });
+});
+
+app.post('/login', (req, res) => {
+    const email = req.body.email
+    const password = req.body.password 
+
+    connection.query('SELECT * FROM users WHERE email = ? AND password = ?',
+    [email, password], (err, result) => {
+        if(err){
+            res.send({err: err})
+        }
+
+        if(result.length > 0) {
+            res.send(result);
+        }else {
+            res.send({message: 'Wrong email/password'});
+        }
+    });
+});
 
 app.listen(process.env.PORT, () => console.log('app is running'));

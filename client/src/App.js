@@ -9,9 +9,9 @@ import SignInModal from "./Modal/SignInModal";
 
 
 function App() {
-  const [showLogin, setShowLogin] = useState(true)
+  const [showLogin, setShowLogin] = useState(false)
   const [showSignIn, setShowSignIn] = useState(false)
-
+  
   const showLoginHandler = () => {
     setShowLogin(!showLogin)
     setShowSignIn(false)
@@ -20,9 +20,13 @@ function App() {
     setShowSignIn(!showSignIn)
     setShowLogin(false)
   }
+  const closeLoginHandler = () => {
+    setShowLogin(false)
+    setShowSignIn(false)
+  }
   return (
     <>
-     <Home onShowLogin={showLoginHandler}/>
+     <Home onShowLogin={showLoginHandler} onCloseLogin={closeLoginHandler}/>
      {showLogin && <LoginModal onShowSignIn={showSignInHandler}/>}
      {showSignIn && <SignInModal onShowLogin={showLoginHandler}/>}
      <Navbar />
