@@ -7,7 +7,8 @@ const Home = (props) => {
     <div className="home-container" id="home" >
       <div className="home-socials-container">
         <div className="home-socials">
-          <a id="fb" href="https://www.facebook.com/BVB" target="_blank">
+          <div className="home-socials-wrapper">
+ <a id="fb" href="https://www.facebook.com/BVB" target="_blank">
             <i class="bx bxl-facebook bx-tada-hover"></i>
           </a>
           <a id="yt" href="https://www.youtube.com/@BVB" target="_blank">
@@ -22,7 +23,8 @@ const Home = (props) => {
           <a id="tc" href="https://www.twitch.tv/bvb_official" target="_blank">
             <i class="bx bxl-twitch bx-tada-hover"></i>
           </a>
-          <a  className="login" onClick={props.onShowLogin}>LOG IN</a>
+          </div>
+          <a className="login" onClick={props.onShowLogin}>LOG IN</a>
         </div>
       </div>
       <News onCloseLogin={props.onCloseLogin}/>

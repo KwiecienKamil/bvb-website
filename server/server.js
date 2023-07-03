@@ -35,6 +35,7 @@ app.get('/players', (req, res) => {
     })
 })
 
+
 app.post('/register', (req, res) => {
     const email = req.body.email
     const password = req.body.password 
@@ -56,7 +57,7 @@ app.post('/login', (req, res) => {
         }
 
         if(result.length > 0) {
-            res.send(result);
+            res.send(result)
         }else {
             res.send({message: 'Wrong email/password'});
         }

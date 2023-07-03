@@ -1,23 +1,24 @@
 .navbar-container {
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
-    font-family: 'Rubik', sans-serif;
-    width: 30vh;
-    height: 100vh;
+    min-width: 12%;
+    height: 100%;
     background: #fde100;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Rubik', sans-serif;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,.6);
+    z-index: 100;
 }
 .navbar-container img {
-    width: 150px;
-    position: absolute;
-    top: 20px;
+   position: absolute;
+   top: 20px;
+    max-width: 150px;
+    transition: 2s;
 }
-
 .navbar-container a {
     width: 100%;
     text-align: center;
@@ -31,4 +32,12 @@
 }
 .navbar-container a:hover, .navbar-container a.active {
     background-color: #e2cd27;
+}
+@media all and (max-width: 1300px) {
+    .navbar-container a{
+        font-size: 1.2rem;
+    }
+    .navbar-container img {
+        max-width: 100px;
+    }
 }

@@ -7,18 +7,20 @@ import axios from "axios";
 const LoginModal = (props) => {
   const [emailLog, setEmailLog] = useState('')
   const [passwordLog, setPasswordLog] = useState('')
-  const [loginStatus, setLoginStatus] = useState('')
+  const [loginMessage, setLoginMessage] = useState('')
   const [loggedInEmail, setLoggedInEmail] = useState('')
+  const [loginStatus, setLoginStatus] = useState(false)
 
-  const login = () => {
+  const login = (props) => {
     axios.post('http://localhost:5000/login', {
     email: emailLog,
     password: passwordLog,
   }).then((response) => {
     if (response.data.message) {
-      setLoginStatus(response.data.message)
+      setLoginMessage(response.data.message)
     }else {
       setLoggedInEmail(response.data[0].email)
+      setLoginStatus(true)
     }
     setEmailLog('');
     setPasswordLog('');
@@ -40,7 +42,7 @@ const LoginModal = (props) => {
         </div>
         <div className="question">
         <p>Don't have account? <a onClick={props.onShowSignIn}>Sign in</a></p>
-        <p className='login-info'>{loginStatus}</p>
+        <p className='login-info'>{loginMessage}</p>
         </div>
     </div>,
     document.getElementById('portal')

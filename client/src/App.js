@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './App.css'
 import Navbar from "./pages/Navbar";
 import Players from "./pages/Players";
 import Shop from "./pages/Shop";
@@ -7,33 +8,42 @@ import Home from "./pages/Home";
 import LoginModal from "./Modal/LoginModal";
 import SignInModal from "./Modal/SignInModal";
 
-
 function App() {
-  const [showLogin, setShowLogin] = useState(false)
-  const [showSignIn, setShowSignIn] = useState(false)
-  
+  const [showLogin, setShowLogin] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
+
   const showLoginHandler = () => {
-    setShowLogin(!showLogin)
-    setShowSignIn(false)
-  }
+    setShowLogin(!showLogin);
+    setShowSignIn(false);
+  };
   const showSignInHandler = () => {
-    setShowSignIn(!showSignIn)
-    setShowLogin(false)
-  }
+    setShowSignIn(!showSignIn);
+    setShowLogin(false);
+  };
   const closeLoginHandler = () => {
-    setShowLogin(false)
-    setShowSignIn(false)
-  }
+    setShowLogin(false);
+    setShowSignIn(false);
+  };
   return (
-    <>
-     <Home onShowLogin={showLoginHandler} onCloseLogin={closeLoginHandler}/>
-     {showLogin && <LoginModal onShowSignIn={showSignInHandler}/>}
-     {showSignIn && <SignInModal onShowLogin={showLoginHandler}/>}
-     <Navbar />
-     <Players />
+    <div className="App">
+      <Home onShowLogin={showLoginHandler} onCloseLogin={closeLoginHandler} />
+      {showLogin && (
+        <LoginModal
+          onShowSignIn={showSignInHandler}
+          onCloseLogin={closeLoginHandler}
+        />
+      )}
+      {showSignIn && (
+        <SignInModal
+          onShowLogin={showLoginHandler}
+          onCloseSignIn={closeLoginHandler}
+        />
+      )}
+      <Navbar />
+      <Players/>
      <Shop />
      <About />
-    </>
+    </div>
   );
 }
 

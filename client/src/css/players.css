@@ -1,6 +1,6 @@
 .players-container-wrapper {
     position: relative;
-    left: 30vh;
+    left: 12%;
     width: 90%;
     z-index: 1;
     min-height: 110vh;
@@ -20,4 +20,23 @@
     padding: 0 10%;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 30px;
 }
+@media all and (max-width: 360px) {
+    .players-container-wrapper{
+        left: 0;
+        width: 100%;
+    }
+    .players-container {
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 1300px) {
+    .players-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+

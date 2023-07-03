@@ -31,7 +31,7 @@ const SignInModal = (props) => {
             <button type='submit' className='sign-in' onClick={register}>SIGN IN</button>
         </div>
         <div className="question">
-        <p>Already logged in?<a onClick={props.onShowLogin}>Login</a></p>
+        <p>Already signed in?<a onClick={props.onShowLogin}>Login</a></p>
         </div>
     </div>,
     document.getElementById('portal')

@@ -18,3 +18,18 @@
     justify-content: space-between;
     padding-bottom: 20px;
 }
+@media all and (max-width:360px) {
+    .player-card-wrapper {
+        width: 100%;
+    
+    }
+}
+@media all and (max-width:1024px) {
+    .player-card-wrapper {
+        width: 50%;
+        padding-top: 9vh;
+    }
+    .player-card-image img{
+        padding-top: 10px;
+    }
+}
