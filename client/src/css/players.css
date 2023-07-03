@@ -22,20 +22,12 @@
     flex-wrap: wrap;
     padding-bottom: 30px;
 }
-@media all and (max-width: 360px) {
-    .players-container-wrapper{
-        left: 0;
-        width: 100%;
-    }
-    .players-container {
-        flex-direction: column;
-    }
-}
 @media all and (max-width: 1300px) {
     .players-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+ 
     }
 }
 

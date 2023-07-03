@@ -121,6 +121,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+    position: relative;
 }
 .about-footer p {
     color: #8b8b8b;
@@ -144,8 +145,9 @@
     .about-links{
         height: 70%;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
+        padding: 0 8% 0 1.5%;
     }
     .support, .legal-info, .newsletter{
         min-height: 150px;
@@ -164,5 +166,41 @@
     }
     .helpers-container::before,.about-input::before{
         display: none;
+    }
+}
+@media all and (max-width: 800px) {
+    .about-links{
+        font-size: .8rem;
+        padding: 0 10px 0 15px;
+    }
+    .about-header{
+        font-size: .5rem;
+        width: 50%;
+    }
+      .about-list{
+        width: 30%;
+       }
+       .about-input input{
+        width: 60%;
+       }
+       .newsletter{
+        flex-direction: column;
+       }
+       .about-input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .newsletter .about-header{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        width: 100%;
+       }
+}
+@media all and (max-width: 600px) {
+    .about-footer {
+        left: 12%;
+        width: 80%;
     }
 }

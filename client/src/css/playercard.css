@@ -18,18 +18,25 @@
     justify-content: space-between;
     padding-bottom: 20px;
 }
-@media all and (max-width:360px) {
+@media all and (max-width: 1300px) {
     .player-card-wrapper {
         width: 100%;
-    
+        padding-left: 34%;
+       
     }
 }
-@media all and (max-width:1024px) {
+@media all and (max-width: 1100px) {
     .player-card-wrapper {
-        width: 50%;
-        padding-top: 9vh;
+    padding-left: 30%;
     }
-    .player-card-image img{
-        padding-top: 10px;
+}
+@media all and (max-width: 800px) {
+    .player-card-wrapper {
+    padding-left: 22%;
+    }
+}
+@media all and (max-width: 800px) {
+    .player-card-wrapper {
+    padding-left: 0;
     }
 }

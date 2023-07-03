@@ -69,7 +69,20 @@
         padding-top: 6px;
     }
     .home-socials {
-        padding-left: 5%;
+        padding-left: 11%;
         padding-right: 8%;
+    }
+}
+@media all and (max-width: 400px) {
+    .home-socials-container a{
+        font-size: 1rem;
+    }
+    .home-socials {
+        padding-right: 1%;
+        padding-left: 15%;
+    }
+    .home-socials .login{
+        font-size: 1rem;
+        padding-top: 3px;
     }
 }

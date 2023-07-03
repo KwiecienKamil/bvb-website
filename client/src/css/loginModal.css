@@ -61,3 +61,19 @@
         width: 35%;
     }
 }
+@media all and (max-width:750px) {
+    .modal-container{
+        min-width: 50%;
+    }
+}
+@media all and (max-width:750px) {
+    .modal-container{
+        min-width: 90%;
+        height: 210px;
+    }
+}
+@media all and (max-width:450px) {
+    .modal-container{
+        min-width: 77%;
+    }
+}
