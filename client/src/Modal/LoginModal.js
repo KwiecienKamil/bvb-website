@@ -8,6 +8,7 @@ const LoginModal = (props) => {
   const [emailLog, setEmailLog] = useState('')
   const [passwordLog, setPasswordLog] = useState('')
   const [loginMessage, setLoginMessage] = useState('')
+  const [LoggedIn, setLoggedIn] = useState('')
   const [loggedInEmail, setLoggedInEmail] = useState('')
   const [loginStatus, setLoginStatus] = useState(false)
 
@@ -18,9 +19,12 @@ const LoginModal = (props) => {
   }).then((response) => {
     if (response.data.message) {
       setLoginMessage(response.data.message)
+      setLoggedIn('')
     }else {
       setLoggedInEmail(response.data[0].email)
       setLoginStatus(true)
+      setLoginMessage('')
+      setLoggedIn('Signed In!')
     }
     setEmailLog('');
     setPasswordLog('');
@@ -43,6 +47,7 @@ const LoginModal = (props) => {
         <div className="question">
         <p>Don't have account? <a onClick={props.onShowSignIn}>Sign in</a></p>
         <p className='login-info'>{loginMessage}</p>
+        <p className='login-success'>{LoggedIn}</p>
         </div>
     </div>,
     document.getElementById('portal')

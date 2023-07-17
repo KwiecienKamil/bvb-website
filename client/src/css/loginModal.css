@@ -56,6 +56,11 @@
     display: flex;
     justify-content: center;
 }
+.login-success {
+    color: rgb(14, 121, 14);
+    display: flex;
+    justify-content: center;
+}
 @media all and (max-width:1024px) {
     .modal-container{
         width: 35%;

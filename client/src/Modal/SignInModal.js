@@ -14,7 +14,12 @@ const SignInModal = (props) => {
     password: passwordReg,
   }).then((response) => {
     console.log(response)
+    refreshPage()
   })
+  }
+
+  const refreshPage = () => {
+    window.location.reload();
   }
   return (
     ReactDOM.createPortal(
