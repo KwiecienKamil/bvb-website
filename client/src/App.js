@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './App.css'
+import "./App.css";
 import Navbar from "./pages/Navbar";
 import Players from "./pages/Players";
 import Shop from "./pages/Shop";
@@ -40,9 +40,9 @@ function App() {
         />
       )}
       <Navbar />
-      <Players/>
-     <Shop />
-     <About />
+      <Players />
+      <Shop />
+      <About />
     </div>
   );
 }

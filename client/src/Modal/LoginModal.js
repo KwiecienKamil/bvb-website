@@ -9,8 +9,6 @@ const LoginModal = (props) => {
   const [passwordLog, setPasswordLog] = useState("");
   const [loginMessage, setLoginMessage] = useState("");
   const [LoggedIn, setLoggedIn] = useState("");
-  const [loggedInEmail, setLoggedInEmail] = useState("");
-  const [loginStatus, setLoginStatus] = useState(false);
 
   const login = (props) => {
     axios

@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/playercard.css'
+import "../css/playercard.css";
 
 const PlayerCard = (props) => {
   return (

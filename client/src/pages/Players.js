@@ -18,7 +18,7 @@ const Players = () => {
       <h1>PLAYERS</h1>
       <div className="players-container">
         {backendData.map((player) => (
-            <PlayerCard
+          <PlayerCard
             key={player.id}
             name={player.name}
             src={player.image}
