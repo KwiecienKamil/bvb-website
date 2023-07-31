@@ -8,18 +8,15 @@ const SignInModal = (props) => {
   const [passwordReg, setPasswordReg] = useState("");
 
   const register = () => {
-    if (emailReg.length > 0 && passwordReg > 0) {
+    if (emailReg.length > 0 && passwordReg.length > 0) {
       axios
-        .post("http://localhost:5000/register", {
+        .post("https://bvb-backend.onrender.com/register", {
           email: emailReg,
           password: passwordReg,
         })
-        .then((response) => {
-          console.log(response);
-        });
       setEmailReg("");
       setPasswordReg("");
-      window.location.reload();
+      alert('Succesfully signed up')
     } else {
       alert("Email/password can't be empty!");
     }
@@ -49,7 +46,7 @@ const SignInModal = (props) => {
       </div>
       <div className="modal-button">
         <button type="submit" className="sign-in" onClick={register}>
-          SIGN IN
+          SIGN UP
         </button>
       </div>
       <div className="question">

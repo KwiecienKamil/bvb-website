@@ -62,6 +62,7 @@ app.post("/login", (req, res) => {
 
       if (result.length > 0) {
         res.send(result);
+        console.log(result.data)
       } else {
         res.send({ message: "Wrong email/password" });
       }
@@ -69,4 +70,4 @@ app.post("/login", (req, res) => {
   );
 });
 
-app.listen(process.env.PORT, () => console.log("app is running"));
+app.listen(process.env.PORT || 5000, () => console.log("app is running"));

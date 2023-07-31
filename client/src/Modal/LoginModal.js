@@ -12,23 +12,21 @@ const LoginModal = (props) => {
 
   const login = (props) => {
     axios
-      .post("http://localhost:5000/login", {
-        email: emailLog,
-        password: passwordLog,
-      })
-      .then((response) => {
-        if (response.data.message) {
-          setLoginMessage(response.data.message);
-          setLoggedIn("");
-        } else {
-          setLoggedInEmail(response.data[0].email);
-          setLoginStatus(true);
-          setLoginMessage("");
-          setLoggedIn("Signed In!");
-          setEmailLog("");
-          setPasswordLog("");
-          window.location.reload();
-        }
+    .post("https://bvb-backend.onrender.com/login", {
+      email: emailLog,
+      password: passwordLog,
+    })
+    .then((response) => {
+      if (response.data.message) {
+        setLoginMessage(response.data.message);
+        setLoggedIn("");
+      } else {
+        setLoginMessage("");
+        setLoggedIn("Logged In!");
+        setEmailLog("");
+        setPasswordLog("");
+        window.location.reload();
+      }
       });
   };
   return ReactDOM.createPortal(
@@ -60,7 +58,7 @@ const LoginModal = (props) => {
       </div>
       <div className="question">
         <p>
-          Don't have account? <a onClick={props.onShowSignIn}>Sign in</a>
+          Don't have account? <a onClick={props.onShowSignIn}>Sign up</a>
         </p>
         <p className="login-info">{loginMessage}</p>
         <p className="login-success">{LoggedIn}</p>

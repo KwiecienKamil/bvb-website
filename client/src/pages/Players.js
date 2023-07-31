@@ -7,7 +7,7 @@ const Players = () => {
   const [backendData, setBackendData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/players").then((request) => {
+    axios.get("https://bvb-backend.onrender.com/players").then((request) => {
       setBackendData(request.data);
       console.log(backendData);
     });
