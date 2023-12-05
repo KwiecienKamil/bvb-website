@@ -15,5 +15,4 @@ Express.js
 + ***Working with MySql Workbench***
 + ***Improved creating server side in Express.js***
 + ***Hosting database on Render.com***
-+ ***Deploying project on Netlify.com***
 
